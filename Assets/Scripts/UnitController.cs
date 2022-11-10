@@ -25,7 +25,7 @@ public class UnitController : MonoBehaviour
     {
         if (faction.buildingPlacer.placingBuilding) return;
         
-        if (InputManager.Instance.secondaryDown) DecideAndSetUnitActions();
+        if (InputManager.Instance.secondaryHeld) DecideAndSetUnitActions();
     }
     
     void DecideAndSetUnitActions()

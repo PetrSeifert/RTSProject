@@ -66,7 +66,7 @@ public class Unit : RTSFactionEntity, IDamageable, IAttacking
         //    richAI.SearchPath();
         //}
 
-        if (Vector3.Distance(transform.position, richAI.steeringTarget) < 0.03) //Fix for weird pathfinding bug
+        if (Vector3.Distance(transform.position, richAI.steeringTarget) < 0.03 && !richAI.pathPending && richAI.canMove) //Fix for weird pathfinding bug
             richAI.SearchPath();
 
         if ((richAI.reachedDestination || richAI.reachedEndOfPath) && !richAI.pathPending && richAI.canMove) richAI.canMove = false;

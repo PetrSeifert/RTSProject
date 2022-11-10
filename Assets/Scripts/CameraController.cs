@@ -37,13 +37,11 @@ public class CameraController : MonoBehaviour
         Vector2 mousePosition = new(Mathf.RoundToInt(InputManager.Instance.mousePosition.x), Mathf.RoundToInt(InputManager.Instance.mousePosition.y));
         float horizontal = InputManager.Instance.horizontal;
         float vertical = InputManager.Instance.vertical;
-        if (mousePosition.x < 5 || mousePosition.x > Screen.currentResolution.width - 5 || mousePosition.y < 5 ||
-            mousePosition.y > Screen.currentResolution.height - 5)
+        if (mousePosition.x < Screen.currentResolution.width * 0.01 || mousePosition.x > Screen.currentResolution.width - Screen.currentResolution.width * 0.01 ||
+            mousePosition.y < Screen.currentResolution.height * 0.01 || mousePosition.y > Screen.currentResolution.height - Screen.currentResolution.height * 0.01)
         {
-            Vector2 moveDirection =
-                new Vector2((mousePosition.x - Screen.currentResolution.width / 2) / Screen.currentResolution.width,
-                        (mousePosition.y - Screen.currentResolution.height / 2) / Screen.currentResolution.height)
-                    .normalized;
+            Vector2 moveDirection = new Vector2((mousePosition.x - Screen.currentResolution.width / 2) / Screen.currentResolution.width,
+                        (mousePosition.y - Screen.currentResolution.height / 2) / Screen.currentResolution.height).normalized;
             horizontal = moveDirection.x * movementSpeed;
             vertical = moveDirection.y * movementSpeed;
         }
