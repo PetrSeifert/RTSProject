@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5611814171495664083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4580746208890227058}
+  - component: {fileID: 4757993838571230693}
+  m_Layer: 0
+  m_Name: Globals
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4580746208890227058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5611814171495664083}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 137.55971, y: 1, z: -134.46013}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4757993838571230693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5611814171495664083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a517ee4944a8d68419f07791c57b09e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceSources:
+  - {fileID: 6831227780145114279, guid: a15e85a7850084a49b073897dccc0644, type: 3}
+  - {fileID: 9100085768258417182, guid: dee5de3f5e0fc9140a820f78ef04f88f, type: 3}
+  - {fileID: 9100085768258417182, guid: 4c1a5e8c528382e488f1d601ad01aa0c, type: 3}
+  - {fileID: 9100085768258417182, guid: a78d48c562c7174428f86376020236f1, type: 3}
+  units:
+  - {fileID: 6068361917172772431, guid: ec4ad4fad718dd04c905ae205d3a5920, type: 3}
+  - {fileID: 3760027166885765010, guid: 891ec9d85ef602d49acd27d65f8c72e2, type: 3}
+  - {fileID: 3533351993886280815, guid: f3d99a78a6ba80744a64fe3bf3f38cfd, type: 3}
+  - {fileID: 6492186205338908073, guid: 8bc0c34fa92630a4cab1d4ddb56efa12, type: 3}

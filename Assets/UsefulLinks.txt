@@ -1,0 +1,1 @@
+https://forum.unity.com/threads/avoiding-duplicate-code-between-the-player-and-npc-classes-deriving-from-unitys-monobehaviour.888757/

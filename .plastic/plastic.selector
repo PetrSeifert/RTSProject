@@ -1,0 +1,4 @@
+repository "RTSProject@PetrSeifert@cloud"
+  path "/"
+    br "/main"
+    co "/main"

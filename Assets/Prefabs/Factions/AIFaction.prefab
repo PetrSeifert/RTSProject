@@ -1,0 +1,197 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7636744441367966644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7636744441367966645}
+  m_Layer: 0
+  m_Name: Units
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7636744441367966645
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636744441367966644}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7636744442323251415}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7636744441913548530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7636744441913548531}
+  m_Layer: 0
+  m_Name: Buildings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7636744441913548531
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636744441913548530}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7636744442323251415}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7636744442323251414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7636744442323251415}
+  - component: {fileID: 7636744442323251409}
+  - component: {fileID: 7636744442323251408}
+  - component: {fileID: 7636744442323251411}
+  - component: {fileID: 7636744442323251372}
+  - component: {fileID: -7336673083820115957}
+  m_Layer: 0
+  m_Name: AIFaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7636744442323251415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636744442323251414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 150, y: 0, z: -150}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7636744441367966645}
+  - {fileID: 7636744441913548531}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7636744442323251409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636744442323251414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4e334b0c68d59744b553d0c1963067d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faction: {fileID: 7636744442323251411}
+  idleVillagers: []
+--- !u!114 &7636744442323251408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636744442323251414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe197e94370d6e4d84089e0b2478cce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faction: {fileID: 0}
+  selectableUnits: []
+  selectedBuilding: {fileID: 0}
+--- !u!114 &7636744442323251411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636744442323251414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1412bd9b62f85b4999623ab74ea2561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  owner: 2
+  color: {r: 0, g: 0, b: 1, a: 0}
+  selectionController: {fileID: 7636744442323251408}
+  unitController: {fileID: 7636744442323251409}
+  buildingPlacer: {fileID: 7636744442323251372}
+  localPlayerControlled: 0
+  neutralFaction: 0
+  unitsHolder: {fileID: 7636744441367966645}
+  buildingsHolder: {fileID: 7636744441913548531}
+  defaultUnitsAmount: 5
+  maxTradersAmount: 5
+  maxUnitsSpace: 200
+  mainHallPrefab: {fileID: 7559079797782920582, guid: 42ac3d637255e0c458ac3a0f3edf587a,
+    type: 3}
+  villagerPrefab: {fileID: 6492186205338908073, guid: 8bc0c34fa92630a4cab1d4ddb56efa12,
+    type: 3}
+  defaultResources:
+    m_keys: 00000000010000000300000002000000
+    m_values: f4010000f4010000f401000000000000
+  storageSpace: 0
+  unitsSpace: 0
+  housingSpace: 0
+  unitsSpaceOccupied: 0
+  tradersAmount: 0
+--- !u!114 &7636744442323251372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636744442323251414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27da9ad9eda6dba4cab8f4370ad09cb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placingBuilding: 0
+  faction: {fileID: 7636744442323251411}
+  previewBuildingObject: {fileID: 8212454229333904134, guid: f5cdab1be327f4a45a663be3439f5642,
+    type: 3}
+--- !u!114 &-7336673083820115957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636744442323251414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b180fb6306fc4c54997c669613f26e02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainHall: {fileID: 0}
+  buildings: []
