@@ -20,7 +20,10 @@ public class UI_Manager : Singleton<UI_Manager>
     [SerializeField] GameObject mainHallUIPrefab;
     [SerializeField] GameObject barracksUIPrefab;
     [SerializeField] TMP_Text idleVillagersCountText;
-    [SerializeField] TMP_Text resourcesText;
+    [SerializeField] TMP_Text coinsText;
+    [SerializeField] TMP_Text foodsText;
+    [SerializeField] TMP_Text woodsText;
+    [SerializeField] TMP_Text stonesText;
     [SerializeField] EventSystem eventSystem;
 
     GraphicRaycaster raycaster;
@@ -132,8 +135,10 @@ public class UI_Manager : Singleton<UI_Manager>
 
     void UpdateResourcesUI()
     {
-        resourcesText.text =
-            $"Money: {playerFaction.resourceStorage[ResourceType.Money]} Food: {playerFaction.resourceStorage[ResourceType.Food]} Wood: {playerFaction.resourceStorage[ResourceType.Wood]} Stone: {playerFaction.resourceStorage[ResourceType.Stone]}";
+        coinsText.text = playerFaction.resourceStorage[ResourceType.Money].ToString();
+        foodsText.text = playerFaction.resourceStorage[ResourceType.Food].ToString();
+        woodsText.text = playerFaction.resourceStorage[ResourceType.Wood].ToString();
+        stonesText.text = playerFaction.resourceStorage[ResourceType.Stone].ToString();
     }
 
     void UpdateIdleVillagersCountText()
